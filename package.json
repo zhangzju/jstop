@@ -1,0 +1,21 @@
+{
+  "name": "jstop",
+  "version": "1.0.0",
+  "description": "使用Node的原生模块以及直接读取proc的内容来查看系统的信息，采用Electron打包发布。",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangzju/jstop.git"
+  },
+  "author": "zhangzju",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangzju/jstop/issues"
+  },
+  "homepage": "https://github.com/zhangzju/jstop#readme"
+}
