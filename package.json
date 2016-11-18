@@ -2,11 +2,14 @@
   "name": "jstop",
   "version": "1.0.0",
   "description": "使用Node的原生模块以及直接读取proc的内容来查看系统的信息，采用Electron打包发布。",
-  "main": "index.js",
+  "main": "main.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "devtron": "^1.4.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "electron ."
   },
   "repository": {
     "type": "git",
