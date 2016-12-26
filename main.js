@@ -9,8 +9,8 @@ let mainWindow
 
 function createWindow (){
   mainWindow = new BrowserWindow({width: 800, height: 600})
-  mainWindow.loadURL('file://${__dirname}/index/html')
-  // mainWindow.webContents.openDevTools()
+  mainWindow.loadURL('file://' + __dirname + '/index.html')
+  mainWindow.webContents.openDevTools()
   mainWindow.on('closed', ()=>{
     mainWindow = null
   })
@@ -18,7 +18,10 @@ function createWindow (){
 
 app.on('ready', createWindow)
 app.on('ready', function (){
-  console.log(os.cpus())
+  console.log(os.cpus().length)
+  for (let cpu of os.cpus()){
+    // console.log(cpu.model);
+  }
 })
 
 app.on('window-all-closed', () => {
