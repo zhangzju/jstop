@@ -27,4 +27,4 @@ electron .
 
 ## 运行截图
 
-![sjstop](jstop.PNG)
+![jstop](jstop.PNG)
