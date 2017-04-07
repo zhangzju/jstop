@@ -10,13 +10,8 @@ let mainWindow
 let topInfo = []
 
 function createWindow (){
-<<<<<<< HEAD
   mainWindow = new BrowserWindow({width: 800, height: 600})
   mainWindow.loadURL('file://${__dirname}/index/html')
-=======
-  mainWindow = new BrowserWindow({width: 1300, height: 640})
-  mainWindow.loadURL('file://' + __dirname + '/index.html')
->>>>>>> 624a552b9ec111812cba02838f3de1580294291f
   // mainWindow.webContents.openDevTools()
   mainWindow.on('closed', ()=>{
     mainWindow = null
