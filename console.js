@@ -1,3 +1,5 @@
-import sysinfo from 'cpu.js';
+const sysinfo = require ('./cpu.js');
+const os = require('os');
 
-console.log(sysinfo.arch);
+console.log(sysinfo);
+// console.log(os.arch())
