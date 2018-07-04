@@ -1,26 +1,27 @@
-# js-top
-使用Node的原生模块以及直接读取proc的内容来查看系统的信息，采用Electron打包发布。
+## js-top
 
+C++ native addons aimed at get the information of the node application process runtime stats.
 
-## 技术栈
+Warning: Only support *nix enviroment as we use /proc to get the stats now.
 
-1, Electron
+## Add to your project
 
-2, Bulma.css
-
-3, Request
-
-
-
-## How to use
-
-下载安装包，或者下载源代码进行编译：
+Download the code:
 
 ```javascript
-electron .
+git clone <RepoURL>
+```
+
+Compile the addons:
+
+```shell
+cd ./addons && node-gyp configure build
+```
+
+Add the addons to your module path and require it:
+
+```javascript
+const jstop = require("./jstop.node")
 ```
 
 
-## 运行截图
-
-![jstop](jstop.PNG)
